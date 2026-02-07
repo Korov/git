@@ -72,3 +72,18 @@ and the name as (depending on your mood):
 [Documentation/SubmittingPatches]: Documentation/SubmittingPatches
 [Documentation/CodingGuidelines]: Documentation/CodingGuidelines
 [po/README.md]: po/README.md
+
+
+# build
+make configure
+./configure --prefix=$PWD/build/git
+
+echo "2.53.0.1" > version
+
+make install
+./build/git/bin/git --version
+
+
+tar -czvf ./build/git-mac-2.53.0.1.tar.gz -C build git
+
+tar -czvf ./build/git-linux-2.53.0.1.tar.gz -C build git

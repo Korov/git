@@ -258,3 +258,6 @@ Release/
 /contrib/buildsystems/out
 /contrib/libgit-rs/target
 /contrib/libgit-sys/target
+build/
+configure~
+.DS_Store
